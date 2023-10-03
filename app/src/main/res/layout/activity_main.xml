@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/agree_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100sp"
+        android:fontFamily="@font/roboto_slab_bold"
+        android:text="@string/agree_label"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/agree_text"
+        android:layout_width="match_parent"
+        android:layout_height="190sp"
+        android:layout_below="@+id/agree_label"
+        android:layout_marginTop="65dp"
+        android:fontFamily="@font/roboto_slab_bold"
+        android:text="@string/agree_text"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/agree_label" />
+
+    <Button
+        android:id="@+id/agree_btn"
+        android:layout_width="250sp"
+        android:layout_height="60sp"
+        android:layout_below="@+id/checkBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:backgroundTint="@color/red"
+        android:fontFamily="@font/roboto_slab_bold"
+        android:text="@string/agree_btn"
+        app:cornerRadius="0dp" />
+
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="250sp"
+        android:layout_height="60sp"
+        android:layout_below="@+id/agree_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"
+        android:backgroundTint="@color/red"
+        android:fontFamily="@font/roboto_slab_bold"
+        android:text="@string/next_btn"
+        app:cornerRadius="0dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/agree_text"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:textAlignment="center"
+        android:padding="10sp"
+        android:layout_marginHorizontal="70sp"
+        android:text="@string/check_box_agree"
+        android:buttonTint="@color/red"
+        />
+
+</RelativeLayout>
